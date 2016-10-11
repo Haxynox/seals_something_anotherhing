@@ -28,8 +28,8 @@ PRODUCT_PACKAGES += \
 	init.samsung.rc \
 	init.samsungexynos8890.rc \
 	ueventd.samsungexynos8890.rc \
-    init.samsungexynos8890.usb.rc \
-    init.wifi.rc
+	init.samsungexynos8890.usb.rc \
+	init.wifi.rc
 
 ###########################################################
 ### GRAPHICS
@@ -87,6 +87,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
 	dtbhtoolExynos
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Inherit board specific products
 -include $(LOCAL_PATH)/product/*.mk
