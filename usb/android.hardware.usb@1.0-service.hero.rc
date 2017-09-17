@@ -1,0 +1,4 @@
+service vendor.usb-hal-1-0 /system/vendor/bin/hw/android.hardware.usb@1.0-service.hero
+    class hal
+    user system
+    group system
