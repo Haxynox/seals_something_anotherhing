@@ -91,12 +91,6 @@
     <!-- The default iface on which to monitor data use -->
     <string name="config_datause_iface" translatable="false">rmnet4</string>
 
-    <!-- The RadioAccessFamilies supported by the device.
-         Empty is viewed as "all".  Only used on devices which
-         don't support RIL_REQUEST_GET_RADIO_CAPABILITY
-         format is UMTS|LTE|... -->
-    <string translatable="false" name="config_radio_access_family">GSM | WCDMA | LTE</string>
-
     <!-- ############################################################## -->
     <!-- ### HARDWARE KEYS                                              -->
     <!-- ############################################################## -->
@@ -113,7 +107,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">83</integer>
+    <!--integer name="config_deviceHardwareKeys">83</integer-->
 
     <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -127,7 +121,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareWakeKeys">65</integer>
+    <!--integer name="config_deviceHardwareWakeKeys">65</integer-->
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
@@ -221,10 +215,10 @@
     <bool name="config_intrusiveNotificationLed">true</bool>
 
     <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
-    <bool name="config_intrusiveBatteryLed">true</bool>
+    <!--bool name="config_intrusiveBatteryLed">true</bool-->
 
     <!-- Boolean to enable stk functionality on Samsung phones -->
-    <bool name="config_samsung_stk">true</bool>
+    <!--bool name="config_samsung_stk">true</bool-->
     
     <!-- Doze (Ambient display) -->
     <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
@@ -253,7 +247,7 @@
            1. Lenient threshold
            2. Custom threshold
     -->
-    <integer name="config_LTE_RSRP_threshold_type">2</integer>
+    <!--integer name="config_LTE_RSRP_threshold_type">2</integer-->
 
     <!-- For performance and storage reasons, limit the number of fingerprints per user -->
     <integer name="config_fingerprintMaxTemplatesPerUser">4</integer>

@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2017 Fernando Von Arx <fer.vonarx@gmail.com>
 # Copyright (C) 2017 Jesse Chan <cjx123@outlook.com>
+# Copyright (C) 2017 Ivan Meler <i_ivan@windowslive.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -46,4 +47,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # sdcardfs
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sys.sdcardfs=true
+	ro.sys.sdcardfs=false

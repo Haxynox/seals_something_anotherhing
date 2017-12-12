@@ -1,7 +1,7 @@
 # Packages
 PRODUCT_PACKAGES += \
-	fingerprintd \
-	fingerprint.exynos5
+	fingerprint.exynos5 \
+	android.hardware.biometrics.fingerprint@2.1-service
 
 # Permissions
 PRODUCT_COPY_FILES += \

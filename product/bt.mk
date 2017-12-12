@@ -1,6 +1,8 @@
 # Init Resources
 PRODUCT_PACKAGES += \
-	init.bluetooth.rc
+	init.bluetooth.rc \
+	android.hardware.bluetooth@1.0-impl \
+	libbt-vendor
 
 # Permissions
 PRODUCT_COPY_FILES += \

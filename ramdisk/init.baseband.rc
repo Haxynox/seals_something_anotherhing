@@ -78,8 +78,9 @@ service init_baseband /init.baseband.sh
     seclabel u:r:init:s0
     oneshot
 
+
 service cpboot-daemon /sbin/cbd -d -tss310 -bm -mm -P platform/155a0000.ufs/by-name/RADIO
     class main
     user root
     group radio cache inet misc audio sdcard_rw log sdcard_r shell
-    seclabel u:r:cbd:s0
+

@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2017 Fernando Von Arx <fer.vonarx@gmail.com>
 # Copyright (C) 2017 Jesse Chan <cjx123@outlook.com>
+# Copyright (C) 2017 Ivan Meler <i_ivan@windowslive.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -45,15 +46,15 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
-# Packaging
-BLOCK_BASED_OTA := false
-
 # Properties
 TARGET_SYSTEM_PROP := device/samsung/hero-common/system.prop
 
 # Renderscript
 BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := exynos-m1
+
+# Usb
+TARGET_USES_LEGACY_ADB_INTERFACE := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS := device/samsung/hero-common/sepolicy

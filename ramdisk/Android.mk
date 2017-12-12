@@ -40,22 +40,6 @@ LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE		:= init.bluetooth.rc
-LOCAL_MODULE_TAGS	:= optional eng
-LOCAL_MODULE_CLASS	:= BOOT
-LOCAL_SRC_FILES 	:= init.bluetooth.rc
-LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE		:= init.gps.rc
-LOCAL_MODULE_TAGS	:= optional eng
-LOCAL_MODULE_CLASS	:= BOOT
-LOCAL_SRC_FILES		:= init.gps.rc
-LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE		:= init.rilchip.rc
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= BOOT
@@ -68,6 +52,22 @@ LOCAL_MODULE		:= init.rilcommon.rc
 LOCAL_MODULE_TAGS	:= optional eng
 LOCAL_MODULE_CLASS	:= BOOT
 LOCAL_SRC_FILES		:= init.rilcommon.rc
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= init.bluetooth.rc
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= BOOT
+LOCAL_SRC_FILES 	:= init.bluetooth.rc
+LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE		:= init.gps.rc
+LOCAL_MODULE_TAGS	:= optional eng
+LOCAL_MODULE_CLASS	:= BOOT
+LOCAL_SRC_FILES		:= init.gps.rc
 LOCAL_MODULE_PATH	:= $(TARGET_ROOT_OUT)
 include $(BUILD_PREBUILT)
 

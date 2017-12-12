@@ -9,6 +9,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	init.gps.rc
 
+PRODUCT_PACKAGES += \
+	libsensoreventq
+
+
 # Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml

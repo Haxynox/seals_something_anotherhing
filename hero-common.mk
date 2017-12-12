@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2017 Fernando Von Arx <fer.vonarx@gmail.com>
 # Copyright (C) 2017 Jesse Chan <cjx123@outlook.com>
+# Copyright (C) 2017 Ivan Meler <i_ivan@windowslive.com>
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -64,31 +65,18 @@ TARGET_SCREEN_WIDTH := 1440
 ###########################################################
 
 PRODUCT_PACKAGES += \
-	power.exynos5
-
-###########################################################
-### LIGHTS
-###########################################################
-
-PRODUCT_PACKAGES += \
-	lights.universal8890
+	power.exynos5 \
+	android.hardware.power@1.0-impl
 
 ###########################################################
 ### CHARGER
 ###########################################################
 
 # Offmode charger
-# Use cm images if available, aosp ones otherwise
+# Use LineageOS images if available, aosp ones otherwise
 PRODUCT_PACKAGES += \
 	charger_res_images \
-	cm_charger_res_images
-
-###########################################################
-### MOBICORE
-###########################################################
-
-PRODUCT_PACKAGES += \
-	keystore.exynos5
+	lineage_charger_res_images
 
 ###########################################################
 ### PACKAGES

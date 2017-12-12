@@ -289,16 +289,16 @@ on boot
     chown system radio /sys/class/sec/switch/afc_disable
 
 # Bluetooth
-    chown bluetooth net_bt_stack /dev/ttySAC1
+    chown bluetooth bluetooth /dev/ttySAC1
     chmod 0660 /dev/ttySAC1
     # permissions for bluetooth.
     setprop ro.bt.bdaddr_path "/efs/bluetooth/bt_addr"
-    chown bluetooth net_bt_stack ro.bt.bdaddr_path
-    chown radio net_bt_stack /efs/bluetooth/bt_addr
+    chown bluetooth bluetooth ro.bt.bdaddr_path
+    chown radio bluetooth /efs/bluetooth/bt_addr
     chmod 0640 /efs/bluetooth/bt_addr
     chmod 0660 /sys/class/rfkill/rfkill0/state
-    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/state
-    chown bluetooth net_bt_stack /sys/class/rfkill/rfkill0/type
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
+    chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
 
 #for datarouter
     chown system system /dev/dun
@@ -643,12 +643,6 @@ on fs
     chown system system /sys/class/rtc/rtc0/device/adc_reg_7
     chown system system /sys/class/rtc/rtc0/device/adc_ctrl1
 
-# FINGERPRINT FRAMEWORK : starts fingerprintd
-service fingerprintd /system/bin/fingerprintd
-    class late_start
-    user system
-    group system
-
 #~ # Copy DRM Key
     #~ copy /system/app/wv.keys /factory/wv.keys
 
@@ -658,7 +652,6 @@ service fingerprintd /system/bin/fingerprintd
 # umount service
 service umount_service /system/bin/umount -D /preload
     disabled
-    seclabel u:r:umount_service:s0
     oneshot
 
 # Support Preload install apks

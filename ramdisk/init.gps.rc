@@ -39,4 +39,3 @@ service gpsd /system/bin/gpsd -c /system/etc/gps.xml
     user gps
     group system inet net_raw wakelock
     ioprio be 0
-    seclabel u:r:gpsd:s0
