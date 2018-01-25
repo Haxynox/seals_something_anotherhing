@@ -94,35 +94,7 @@ typedef uint16_t GpsLocationFlags;
  * delete_aiding_data().
  */
 typedef uint16_t GpsAidingData;
-/** SAMSUNG **/
-#define GPS_DELETE_EPHEMERIS                     0x00000001
-#define GPS_DELETE_ALMANAC                       0x00000002
-#define GPS_DELETE_POSITION                      0x00000004
-#define GPS_DELETE_TIME                          0x00000008
-#define GPS_DELETE_IONO                          0x00000010
-#define GPS_DELETE_UTC                           0x00000020
-#define GPS_DELETE_HEALTH                        0x00000040
-#define GPS_DELETE_SVDIR                         0x00000080
-#define GPS_DELETE_SVSTEER                       0x00000100
-#define GPS_DELETE_SADATA                        0x00000200
-#define GPS_DELETE_RTI                           0x00000400
-#define GPS_DELETE_CELLDB_INFO                   0x00000800
-#define GPS_DELETE_ALMANAC_CORR                  0x00001000
-#define GPS_DELETE_FREQ_BIAS_EST                 0x00002000
-#define GLO_DELETE_EPHEMERIS                     0x00004000
-#define GLO_DELETE_ALMANAC                       0x00008000
-#define GLO_DELETE_SVDIR                         0x00010000
-#define GLO_DELETE_SVSTEER                       0x00020000
-#define GLO_DELETE_ALMANAC_CORR                  0x00040000
-#define GPS_DELETE_TIME_GPS                      0x00080000
-#define GLO_DELETE_TIME                          0x00100000
-#define BDS_DELETE_SVDIR                         0X00200000
-#define BDS_DELETE_SVSTEER                       0X00400000
-#define BDS_DELETE_TIME                          0X00800000
-#define BDS_DELETE_ALMANAC_CORR                  0X01000000
-#define BDS_DELETE_EPHEMERIS                     0X02000000
-#define BDS_DELETE_ALMANAC                       0X04000000
-/** SAMSUNG END **/
+
 /** AGPS type */
 typedef uint16_t AGpsType;
 
@@ -415,8 +387,6 @@ typedef struct {
     float   elevation;
     /** Azimuth of SV in degrees. */
     float   azimuth;
-	/** SAMSUNG **/
-	int used;
 } GpsSvInfo;
 
 typedef struct {

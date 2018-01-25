@@ -93,6 +93,18 @@
     </hal>
 
     <!--
+        Location
+      -->
+    <hal format="hidl">
+        <name>android.hardware.gnss</name>
+        <version>1.0</version>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <!--
         Vibrator
       -->
     <hal format="hidl">
