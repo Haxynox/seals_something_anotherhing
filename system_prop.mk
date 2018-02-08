@@ -45,11 +45,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	net.tcp.default_init_rwnd=60
 
-# Load omx blobs
+# misc
 PRODUCT_PROPERTY_OVERRIDES += \
 	media.stagefright.legacyencoder=1 \
 	media.stagefright.less-secure=1 \
-	sys.use_fifo_ui=1
+	sys.use_fifo_ui=1 \
+	ro.telephony.mms_data_profile=5
 
 # sdcardfs
 PRODUCT_PROPERTY_OVERRIDES += \
