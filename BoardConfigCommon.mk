@@ -67,3 +67,9 @@ BOARD_SECCOMP_POLICY += device/samsung/hero-common/seccomp
 
 # Inherit from the proprietary version
 -include vendor/samsung/hero-common/BoardConfigVendor.mk
+
+# include helpers
+include $(LOCAL_PATH)/BoardConfigHelper.mk
+
+# fixup shim-variable
+TARGET_LD_SHIM_LIBS := $(call join-with,:,$(TARGET_LD_SHIM_LIBS)) 
