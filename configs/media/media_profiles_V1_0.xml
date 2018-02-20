@@ -28,7 +28,7 @@
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="120" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="128000"
@@ -41,7 +41,7 @@
              bitRate="17000000"
              width="1920"
              height="1080"
-             frameRate="60" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -54,7 +54,7 @@
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="120" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="128000"
@@ -67,7 +67,7 @@
              bitRate="3449000"
              width="720"
              height="480"
-             frameRate="120" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -80,7 +80,7 @@
              bitRate="12000000"
              width="1280"
              height="720"
-             frameRate="120" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -93,19 +93,6 @@
              bitRate="17000000"
              width="1920"
              height="1080"
-             frameRate="60" />
-
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
-    <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="50000000"
-             width="3840"
-             height="2160"
              frameRate="30" />
 
       <Audio codec="aac"
@@ -231,7 +218,7 @@
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="120" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="128000"
@@ -244,7 +231,7 @@
              bitRate="17000000"
              width="1920"
              height="1080"
-             frameRate="60" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -257,7 +244,7 @@
              bitRate="384000"
              width="176"
              height="144"
-             frameRate="120" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="128000"
@@ -270,7 +257,7 @@
              bitRate="3449000"
              width="720"
              height="480"
-             frameRate="120" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -283,7 +270,7 @@
              bitRate="12000000"
              width="1280"
              height="720"
-             frameRate="120" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="256000"
@@ -296,7 +283,7 @@
              bitRate="17000000"
              width="1920"
              height="1080"
-             frameRate="60" />
+             frameRate="30" />
 
       <Audio codec="aac"
              bitRate="256000"
