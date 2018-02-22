@@ -138,6 +138,9 @@ on boot
     # to improve allocation times
     # write /proc/sys/vm/min_free_kbytes 32768
     # write /proc/sys/vm/min_free_order_shift 1
+    write /sys/module/selinux/parameters/selinux_fakemode 0
+    setenforce 0
+    write /sys/fs/selinux/enforce 0
 
 # SSWAP
     write /proc/sys/vm/swappiness 190
