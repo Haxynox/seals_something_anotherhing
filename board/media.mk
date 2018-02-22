@@ -20,10 +20,6 @@ TARGET_OMX_LEGACY_RESCALING := true
 
 # Shims: libstagefright
 TARGET_LD_SHIM_LIBS += \
-    /system/lib/libexynoscamera.so|/system/lib/libstagefright_shim.so \
-    /system/lib64/libexynoscamera.so|/system/lib64/libstagefright_shim.so \
-    /system/lib/libexynoscamera3.so|/system/lib/libstagefright_shim.so \
-    /system/lib64/libexynoscamera3.so|/system/lib64/libstagefright_shim.so \
     /system/lib/omx/libOMX.Exynos.AVC.Decoder.so|/system/lib/libui_shim.so \
     /system/lib64/omx/libOMX.Exynos.AVC.Decoder.so|/system/lib64/libui_shim.so \
     /system/lib/omx/libOMX.Exynos.AVC.Encoder.so|/system/lib/libui_shim.so \
