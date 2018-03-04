@@ -37,6 +37,9 @@ TARGET_USES_64_BIT_BINDER := true
 # CPUsets
 ENABLE_CPUSETS := true
 
+# Use SDFat foe exfat driver
+TARGET_EXFAT_DRIVER := sdfat
+
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
