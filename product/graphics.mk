@@ -7,9 +7,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.composer@2.1-impl \
 	android.hardware.graphics.mapper@2.0-impl \
 	libhwc2on1adapter
-#	libExynosHWCService 
-#	libion
-#	gralloc.exynos5
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -40,18 +37,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwc.winupdate=1 \
 	debug.hwc.otf=1
-
-# HWC
-#PRODUCT_PROPERTY_OVERRIDES += \
-#	debug.hwc.force_gpu=0 \
-#	debug.hwc.max_hw_overlays=0 \
-#	debug.egl.hw=1 \
-#	debug.sf.enable_hwc_vds=1 \
-#	debug.sf.hw=1 \
-#	debug.slsi_platform=1 \
-#	debug.hwc.winupdate=1 \
-#	ro.hardware.egl=mali \
-#	debug.hwui.use_buffer_age=false \
-#	persist.sys.ui.hw=true 
-#
 
