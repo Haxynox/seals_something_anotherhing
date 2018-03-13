@@ -14,12 +14,7 @@
 # GNU General Public License for more details.
 #
 
-# Dalvik/Art
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.image-dex2oat-threads=4 \
-    dalvik.vm.boot-dex2oat-threads=4 \
-    dalvik.vm.dex2oat-threads=4 \
-    ro.sys.fw.dex2oat_thread_count=4
+# HWUI
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.texture_cache_size=84 \
@@ -34,6 +29,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_large_cache_width=2048 \
     ro.hwui.text_large_cache_height=1024
 
+# Dalvik/Art
+
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heapgrowthlimit=192m \
@@ -41,6 +38,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=512k \
     dalvik.vm.heapmaxfree=8m \
+    dalvik.vm.image-dex2oat-threads=4 \
+    dalvik.vm.boot-dex2oat-threads=4 \
+    dalvik.vm.dex2oat-threads=4 \
+    ro.sys.fw.dex2oat_thread_count=4
 
 # Network
 # Define default initial receive window size in segments.
