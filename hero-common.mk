@@ -102,9 +102,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	dtbhtoolExynos
 
-# HWUI config
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
-
 # Inherit board specific products
 -include $(LOCAL_PATH)/product/*.mk
 
