@@ -14,40 +14,31 @@
 # GNU General Public License for more details.
 #
 
-##
-## 
-## heaptargetutilization/2 * heapsize = heapgrowthlimit if that logic doesnt pass
-## Value of heaptargetutilization is not set properly
-##
-## as a sidenote heapminfree = heapmaxfree/4
-##
-
-# Dalvik
+# Dalvik memory config
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=512m \
-    dalvik.vm.heapsize=1280m \
-    dalvik.vm.heaptargetutilization=0.80 \
-    dalvik.vm.heapminfree=4m \
-    dalvik.vm.heapmaxfree=16m
+    dalvik.vm.heapgrowthlimit=416m \
+    dalvik.vm.heapsize=896m \
+    dalvik.vm.heaptargetutilization=0.75 \
+    dalvik.vm.heapminfree=2m \
+    dalvik.vm.heapmaxfree=8m
 
-#
 # Network
 # Define default initial receive window size in segments.
 PRODUCT_PROPERTY_OVERRIDES += \
-	net.tcp.default_init_rwnd=60
+    net.tcp.default_init_rwnd=60
 
 # misc
 PRODUCT_PROPERTY_OVERRIDES += \
-	media.stagefright.legacyencoder=1 \
-	media.stagefright.less-secure=1 \
-	ro.telephony.mms_data_profile=5 \
-	persist.media.treble_omx=false
+    media.stagefright.legacyencoder=1 \
+    media.stagefright.less-secure=1 \
+    ro.telephony.mms_data_profile=5 \
+    persist.media.treble_omx=false
 
 # sdcardfs
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.sys.sdcardfs=true
+    ro.sys.sdcardfs=true
 
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.adb.secure=0
+    ro.adb.secure=0
