@@ -262,15 +262,11 @@ Add a comment to this line
          turned off and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOff">true</bool>
 
-    <!-- Default list of files pinned by the Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-        <item>"/system/framework/arm64/boot-framework.oat"</item>
-        <item>"/system/framework/arm64/boot-framework.vdex"</item>
-        <item>"/system/framework/oat/arm64/services.odex"</item>
-        <item>"/system/framework/oat/arm64/services.vdex"</item>
-        <item>"/system/framework/arm64/boot.oat"</item>
-        <item>"/system/framework/arm64/boot.vdex"</item>
-        <item>"/system/framework/arm64/boot-core-libart.oat"</item>
-        <item>"/system/framework/arm64/boot-core-libart.vdex"</item>
-    </string-array>   
+    <string-array translatable="false" name="config_gpsParameters">
+        <item>NTP_SERVER=north-america.pool.ntp.org</item>
+        <item>XTRA_SERVER_1=http://gllto1.glpals.com/4day/v4/latest/lto2.dat</item>
+        <item>XTRA_SERVER_2=http://gllto2.glpals.com/4day/v4/latest/lto2.da</item>
+        <item>SUPL_HOST=supl.google.com</item>
+        <item>SUPL_PORT=7275</item>
+    </string-array>
 </resources>
