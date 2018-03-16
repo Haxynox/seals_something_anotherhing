@@ -49,5 +49,10 @@
 #define SOUND_CAPTURE_HOTWORD_DEVICE 0
 */
 
+/*
+ * ril_set_call_clock_sync() may cause unknown problems with the call-mic.
+ * Uncomment this to disable the support for it.
+ */
+#define DISABLE_CALL_CLOCK_SYNC
 
 #endif // SAMSUNG_AUDIO_H
