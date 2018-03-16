@@ -24,7 +24,7 @@ LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
-LOCAL_SHARED_LIBRARIES := libsensor libhardware_legacy
+LOCAL_SHARED_LIBRARIES := libsensor liblog
 LOCAL_SRC_FILES := SensorEventQ.cpp
 LOCAL_MODULE := libsensoreventq
 LOCAL_MODULE_TAGS := optional

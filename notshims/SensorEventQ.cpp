@@ -14,14 +14,19 @@
  * limitations under the License.
  */
 
-#include <hardware_legacy/uevent.h>
+#define LOG_TAG "SensorEventQueue"
+#define LOG_NDEBUG 0
+
+#include <cutils/log.h>
+
 #include "seq.h"
 
 namespace android
 {
+
 ssize_t SensorEventQueue::read(ASensorEvent* events, unsigned long numEvents)
-	{
-		return this->read(events, static_cast<size_t>(numEvents));
-	}
+{
+	return this->read(events, static_cast<size_t>(numEvents));
 }
 
+}
