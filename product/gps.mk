@@ -6,7 +6,7 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/configs/gps/gps.xml:system/etc/gps.xml
 
 PRODUCT_PACKAGES += \
-	libsensoreventq
+	libsensor_shim
 
 # HIDL
 PRODUCT_PACKAGES += \

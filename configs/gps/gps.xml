@@ -21,7 +21,6 @@
     SuplUT2Seconds="20"
     SuplUT3Seconds="20"
     TcpConnectionTimeout="20"
-    SuplLppCapable="false"
 
     LbsEnable="true"
     LbsServer="BCMLS2.glpals.com"
@@ -33,8 +32,6 @@
 
     IgnoreJniTime="true"
     AssertEnabled="false"
-    IgnoreFwConfig="false"
-    DisablePglorNmeaCallback="true"
    />
 
   <gll
@@ -49,6 +46,7 @@
 
   <gll_features
     EnableLowPowerPmm="true"
+    EnableGalileo="false"
   />
 
 </glgps>

@@ -26,8 +26,9 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 LOCAL_SHARED_LIBRARIES := libsensor liblog
 LOCAL_SRC_FILES := SensorEventQ.cpp
-LOCAL_MODULE := libsensoreventq
+LOCAL_MODULE := libsensor_shim
 LOCAL_MODULE_TAGS := optional
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)

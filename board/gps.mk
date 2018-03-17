@@ -16,4 +16,4 @@
 
 # Shim
 
-TARGET_LD_SHIM_LIBS += /system/bin/gpsd|/system/lib64/libsensoreventq.so
+TARGET_LD_SHIM_LIBS += /system/bin/gpsd|/vendor/lib64/libsensor_shim.so
