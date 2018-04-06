@@ -35,14 +35,14 @@ LOCAL_STATIC_LIBRARIES := \
 LOCAL_C_INCLUDES := \
     INSTALLED_KERNEL_HEADERS \
     frameworks/native/include/media/openmax/ \
-    hardware/samsung_slsi-cm/exynos/include \
-    hardware/samsung_slsi-cm/exynos/libvideocodec/include \
-    hardware/samsung_slsi-cm/$(TARGET_BOARD_PLATFORM)/include \
-    hardware/samsung_slsi-cm/$(TARGET_SOC)/include \
-    hardware/samsung_slsi-cm/openmax/component/common/ \
-    hardware/samsung_slsi-cm/openmax/include/ \
-    hardware/samsung_slsi-cm/openmax/include/exynos/ \
-    hardware/samsung_slsi-cm/openmax/osal/ \
+    hardware/samsung_slsi/exynos/include \
+    hardware/samsung_slsi/exynos/libvideocodec/include \
+    hardware/samsung_slsi/$(TARGET_BOARD_PLATFORM)/include \
+    hardware/samsung_slsi/$(TARGET_SOC)/include \
+    hardware/samsung_slsi/openmax/component/common/ \
+    hardware/samsung_slsi/openmax/include/ \
+    hardware/samsung_slsi/openmax/include/exynos/ \
+    hardware/samsung_slsi/openmax/osal/ \
     $(TOP)/frameworks/native/libs/nativewindow/include
 
 LOCAL_MODULE := libExynosOMX_shim
