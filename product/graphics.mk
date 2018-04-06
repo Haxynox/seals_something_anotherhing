@@ -30,7 +30,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.bq.gpu_to_cpu_unsupported=1 \
 	ro.opengles.version=196609 \
 	ro.sf.lcd_density=560 \
-    debug.hwc.skip_dma_types=0,2 \
 	debug.hwui.use_buffer_age=false
 
 # Properties - HWC - not used on lineage/aosp

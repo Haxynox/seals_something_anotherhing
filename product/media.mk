@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
 # Stagefright
 PRODUCT_PACKAGES += \
 	libstagefright_shim \
+	libExynosOMX_shim \
 	libui_shim
 
 # Overriden service definition
