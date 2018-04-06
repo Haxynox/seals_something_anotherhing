@@ -8,7 +8,7 @@ USE_OPENGL_RENDERER := true
 # H/W composer
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 BOARD_USES_VPP := true
-# BOARD_USES_VPP_V2 := true - update decon_8890.h
+BOARD_USES_VPP_V2 := true
 BOARD_HDMI_INCAPABLE := true
 
 # Scaler
