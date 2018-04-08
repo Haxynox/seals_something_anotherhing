@@ -4,7 +4,7 @@ DEVICE_PATH := device/samsung/hero-common
 PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
 	$(DEVICE_PATH)/configs/gps/gps.xml:system/etc/gps.xml \
-	$(LOCAL_PATH)/configs/gps/lhd.conf:system/etc/lhd.conf
+	$(LOCAL_PATH)/configs/lhd.conf:system/etc/lhd.conf
 
 # HIDL
 PRODUCT_PACKAGES += \
