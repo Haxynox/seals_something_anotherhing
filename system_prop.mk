@@ -63,3 +63,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0
+
+# WiFi Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    wlan.wfd.hdcp=disable \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
+
