@@ -18,10 +18,6 @@ PRODUCT_PACKAGES += \
 	libsecril-client-sap \
 	libril 
 
-# Permissions
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
-
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.add_power_save=1 \

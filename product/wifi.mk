@@ -6,10 +6,6 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
 	$(LOCAL_PATH)/configs/wifi/filter_ie:system/etc/wifi/filter_ie
 
-# Init Resources
-PRODUCT_PACKAGES += \
-	init.wifi.rc
-
 # Packages
 PRODUCT_PACKAGES += \
 	macloader \
@@ -24,11 +20,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.wifi@1.0-service \
 	android.hardware.wifi@1.0 \
 	android.hardware.wifi@1.0-impl
-
-# Permissions
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
-	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
