@@ -188,9 +188,6 @@
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">false</bool>
 
-    <!-- Permit doze mode to operate -->
-    <bool name="config_enableAutoPowerModes">true</bool>
-
     <!-- Allow screen mirroring/miracast -->
     <bool name="config_enableWifiDisplay">true</bool>
     <!-- Our gralloc has support for protected buffers -->
@@ -257,6 +254,4 @@
         <item>SUPL_PORT=7275</item>
     </string-array>
 
-    <!-- Allow screen mirroring/miracast -->
-    <bool name="config_enableWifiDisplay">true</bool>
 </resources>
