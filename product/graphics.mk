@@ -7,7 +7,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.composer@2.1-impl \
 	android.hardware.graphics.mapper@2.0-impl \
 	libhwc2on1adapter \
-    libprocname
+	libprocname
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -20,7 +20,7 @@ PRODUCT_PACKAGES += \
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.bq.gpu_to_cpu_unsupported=1 \
-	ro.opengles.version=196609 \
+	ro.opengles.version=196610 \
 	ro.sf.lcd_density=560 \
 	debug.hwui.use_buffer_age=false \
 	debug.hwc.winupdate=1 \
