@@ -1,14 +1,14 @@
 DEVICE_PATH := device/samsung/hero-common
 
+# Copy stock APN config as lineage one seams to be quite broken and outdated
+PRODUCT_COPY_FILES += $(DEVICE_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
+
 # Init Resources
 PRODUCT_PACKAGES += \
 	init.baseband.rc \
 	init.baseband.sh \
 	init.rilchip.rc \
 	init.rilcommon.rc
-
-# Copy stock APN config as lineage one seems to be quite broken and outdated
-PRODUCT_COPY_FILES += $(DEVICE_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
 
 # Packages
 PRODUCT_PACKAGES += \

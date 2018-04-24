@@ -49,24 +49,19 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tcp.default_init_rwnd=60
 
-# misc
+# MMS
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.stagefright.legacyencoder=1 \
-    media.stagefright.less-secure=1 \
     ro.telephony.mms_data_profile=5 \
+
+# OMX
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.media.treble_omx=false
 
-# sdcardfs
+# SdcardFS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.sdcardfs=false
 
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0
-
-# WiFi Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    wlan.wfd.hdcp=disable \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
 
