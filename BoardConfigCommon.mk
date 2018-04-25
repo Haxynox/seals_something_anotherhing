@@ -40,6 +40,9 @@ TARGET_EXFAT_DRIVER := sdfat
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_sec
+
 # Image
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 BOARD_KERNEL_SEPARATED_DT := true
