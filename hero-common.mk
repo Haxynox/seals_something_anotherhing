@@ -74,7 +74,9 @@ PRODUCT_PACKAGES += \
 	libsamsung_symbols \
 	SamsungServiceMode \
 	Torch \
-	HeroDoze
+	HeroDoze \
+	android.hidl.base@1.0 \
+	android.hidl.manager@1.0
 
 # Filesystem tools for resizing system partition filesystem
 PRODUCT_PACKAGES += \
