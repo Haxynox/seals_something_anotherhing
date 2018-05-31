@@ -394,6 +394,9 @@ on fs
     chown system system /sys/class/backlight/panel/auto_brightness_level
     chown system system /sys/class/backlight/panel/weakness_ccb
 
+# Default MDNIE mode (cinema)
+    write /sys/class/mdnie/mdnie/mode 4
+
 # Permissions for LCD HMT
     chown system system /sys/class/lcd/panel/hmt_on
     chown system system /sys/class/lcd/panel/hmt_bright
