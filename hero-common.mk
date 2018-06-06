@@ -26,6 +26,7 @@ LOCAL_PATH := device/samsung/hero-common
 PRODUCT_PACKAGES += \
 	fstab.samsungexynos8890 \
 	init.samsung.rc \
+	init.gps.rc \
 	init.samsungexynos8890.rc \
 	ueventd.samsungexynos8890.rc \
 	init.samsungexynos8890.usb.rc \
@@ -107,4 +108,4 @@ $(call inherit-product, hardware/samsung_slsi/exynos8890/exynos8890.mk)
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/hero-common/hero-common-vendor.mk)
-$(call inherit-product, vendor/samsung/sensors/hero-common-vendor.mk)
+$(call inherit-product, vendor/samsung/sensors/sensors-common-vendor.mk)
