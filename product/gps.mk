@@ -8,3 +8,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	android.hidl.base@1.0 \
 	android.hidl.manager@1.0
+
+# Config
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/gps/gps.conf:system/etc/gps.conf
