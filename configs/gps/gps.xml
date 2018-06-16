@@ -16,12 +16,11 @@
     SuplSslMethod="SSLv23_NO_TLSv1_2"
     SuplEnable="true"
     SuplUseApn="false"
-    SuplTlsCertPath="/vendor/etc/gnss/gps.cer"
+    SuplTlsCertPath="/system/bin/gps.cer"
     SuplUT1Seconds="20"
     SuplUT2Seconds="20"
     SuplUT3Seconds="20"
     TcpConnectionTimeout="20"
-    SuplLppCapable="false"
 
     LbsEnable="true"
     LbsServer="BCMLS2.glpals.com"
@@ -33,15 +32,12 @@
 
     IgnoreJniTime="true"
     AssertEnabled="false"
-
-    IgnoreFwConfig="false"
-    DisablePglorNmeaCallback="true"
    />
 
   <gll
     LogPriMask="LOG_INFO"
     LogFacMask="LOG_GLLIO | LOG_GLLAPI | LOG_NMEA | LOG_RAWDATA"
-    FrqPlan="FRQ_PLAN_26MHZ_2PPM"
+    FrqPlan="FRQ_PLAN_26MHZ_2PPM_26MHZ_300PPB"
     RfType="GL_RF_47531_BRCM_EXT_LNA"
     WarmStandbyTimeout1Seconds="10"
     WarmStandbyTimeout2Seconds="15"
@@ -50,9 +46,7 @@
 
   <gll_features
     EnableLowPowerPmm="true"
-    EnableBeidou="true"
     EnableGalileo="false"
   />
 
 </glgps>
-
