@@ -387,7 +387,8 @@ typedef struct {
     float   elevation;
     /** Azimuth of SV in degrees. */
     float   azimuth;
-	int used;
+    /** SAMSUNG */
+    uint64_t samsung;
 } GpsSvInfo;
 
 typedef struct {
@@ -482,9 +483,6 @@ typedef struct {
      * might rely in the old (wrong) behavior.
      */
     uint16_t lac;
-#ifdef AGPS_USE_PSC
-    uint16_t psc;
-#endif
     /** Cell id in 2G. Utran Cell id in 3G. Cell Global Id EUTRA in LTE. */
     uint32_t cid;
     /** Tracking Area Code in LTE. */
