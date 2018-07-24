@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The Haxynox Project
+ * Copyright (C) 2017 TeamNexus
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "SensorEventQueue"
+#define LOG_TAG "libsensor_shim"
 #define LOG_NDEBUG 0
 
 #include <cutils/log.h>
 
-#include "seq.h"
+#include "libsensor.h"
 
 namespace android
 {
