@@ -29,7 +29,8 @@ PRODUCT_PACKAGES += \
 	init.samsungexynos8890.rc \
 	ueventd.samsungexynos8890.rc \
 	init.samsungexynos8890.usb.rc \
-	init.wifi.rc
+	init.wifi.rc \
+	init.gps.rc
 
 ###########################################################
 ### GRAPHICS
