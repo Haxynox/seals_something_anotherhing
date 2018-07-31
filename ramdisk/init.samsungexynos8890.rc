@@ -4,7 +4,6 @@ import init.rilcommon.rc
 import init.wifi.rc
 import init.gps.rc
 import init.samsung.rc
-import init.rilcommon.rc
 # import init.power.rc
 
 on early-init

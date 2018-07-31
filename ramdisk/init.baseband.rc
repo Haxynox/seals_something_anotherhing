@@ -29,6 +29,15 @@ on fs
     chown radio system /cpefs
     chmod 0771 /cpefs
 
+    #For cpdebug partition
+    wait /dev/block/platform/155a0000.ufs/by-name/EFS
+    mkdir /efs/cpdebug
+    chown radio system /efs/cpdebug
+    chmod 0660 /efs/cpdebug
+    symlink /dev/block/platform/155a0000.ufs/by-name/CP_DEBUG /efs/cpdebug/node
+    chown radio system /efs/cpdebug/node
+    chmod 0660 /efs/cpdebug/node
+
 on property:ril.clatd.v4-rmnet0=up
     write /sys/class/net/rmnet0/queues/rx-0/rps_cpus 4
     write /sys/class/net/v4-rmnet0/queues/rx-0/rps_cpus 2
@@ -70,14 +79,6 @@ on property:ro.multisim.simslotcount=1
 
 on property:ro.multisim.simslotcount=2
     setprop persist.radio.multisim.config dsds
-
-service init_baseband /init.baseband.sh
-    class boot
-    user root
-    group root
-    seclabel u:r:init:s0
-    oneshot
-
 
 service cpboot-daemon /sbin/cbd -d -tss310 -bm -mm -P platform/155a0000.ufs/by-name/RADIO
     class main
