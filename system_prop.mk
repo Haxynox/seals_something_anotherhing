@@ -49,3 +49,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0
 
+# WiFi Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1
+
