@@ -1,7 +1,9 @@
 DEVICE_PATH := device/samsung/hero-common
 
 # Copy stock APN config as lineage one seams to be quite broken and outdated
-PRODUCT_COPY_FILES += $(DEVICE_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
+PRODUCT_COPY_FILES += \
+	$(DEVICE_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml \
+	$(DEVICE_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml
 
 # Init Resources
 PRODUCT_PACKAGES += \
