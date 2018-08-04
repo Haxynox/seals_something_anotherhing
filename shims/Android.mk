@@ -30,13 +30,3 @@ LOCAL_SRC_FILES := camparams.cpp
 LOCAL_MODULE := libcamhelpr
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
-
-include $(CLEAR_VARS)
-LOCAL_SRC_FILES := libsensor.cpp
-LOCAL_SHARED_LIBRARIES := liblog libsensor
-LOCAL_MODULE := libsensor_shim
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_SHARED_LIBRARY)
-
