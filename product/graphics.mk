@@ -25,4 +25,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	debug.hwui.use_buffer_age=false \
 	debug.hwc.winupdate=1 \
 	debug.hwc.otf=1
-
