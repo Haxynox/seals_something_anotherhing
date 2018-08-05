@@ -418,7 +418,6 @@ on fs
     chown system media_rw /sys/class/backlight/panel/weakness_hbm_comp
     chown system system /sys/class/lcd/panel/ldu_correction
     chown system system /sys/class/lcd/panel/lux
-    chown system media_rw /sys/class/lcd/panel/adaptive_control
     chown system media_rw /sys/class/lcd/panel/resolution
     chown system system /sys/class/lcd/panel/SVC_OCTA
 
