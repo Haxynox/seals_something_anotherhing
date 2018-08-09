@@ -43,6 +43,9 @@ EXTENDED_FONT_FOOTPRINT := true
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_sec
 
+# HIDL Manifest
+DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/configs/manifest.xml
+
 # Image
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
