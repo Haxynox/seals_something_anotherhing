@@ -75,7 +75,6 @@ PRODUCT_PACKAGES += \
 	libsamsung_symbols \
 	SamsungServiceMode \
 	Torch \
-	HeroDoze \
 	android.hidl.base@1.0 \
 	android.hidl.manager@1.0
 

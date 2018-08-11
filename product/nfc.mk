@@ -10,9 +10,10 @@ PRODUCT_COPY_FILES += \
 # Packages
 PRODUCT_PACKAGES += \
 	com.android.nfc_extras \
-	NfcNci \
 	Tag \
 	android.hardware.nfc@1.0-impl
+
+#	NfcNci \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \

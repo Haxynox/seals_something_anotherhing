@@ -43,7 +43,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SdcardFS
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.sdcardfs=true
+    ro.sys.sdcardfs=false \
+    ro.sys.sdcardfs.legacy-mounting=1
 
 # WiFi Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -53,3 +54,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0
 
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.usb.ffs.aio_compat=1

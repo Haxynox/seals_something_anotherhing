@@ -15,29 +15,10 @@
  * limitations under the License.
  */
 
-#include <cutils/properties.h>
-#include <string.h>
-
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-static inline const char* getBTName()
-{
-    char bootloader[PROPERTY_VALUE_MAX];
-    property_get("ro.bootloader", bootloader, "");
-
-    if (!strncmp(bootloader, "G930", 4)) {
-        return "Samsung Galaxy S7";
-    }
-
-    if (!strncmp(bootloader, "G935", 4)) {
-        return "Samsung Galaxy S7 Edge";
-    }
-
-    return "Samsung Galaxy";
-}
-
-#define BTM_DEF_LOCAL_NAME getBTName()
+#define BTM_DEF_LOCAL_NAME "Samsung Galaxy S7"
 
 #define BLE_VND_INCLUDED         TRUE
 #define BTIF_HF_WBS_PREFERRED    TRUE    /* Use WBS */
