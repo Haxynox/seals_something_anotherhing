@@ -19,6 +19,7 @@
 
 #include <dlfcn.h>
 #include <utils/Log.h>
+#include <string.h>
 
 int Exynos_OSAL_Strcmp(const char *s1, const char *s2)
 {
