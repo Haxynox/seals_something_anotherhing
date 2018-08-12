@@ -26,7 +26,7 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 LOCAL_SHARED_LIBRARIES := libhardware libgui libui
 LOCAL_C_INCLUDES := frameworks/native/include
-LOCAL_SRC_FILES := camparams.cpp
+LOCAL_SRC_FILES := camparams.cpp Fence.cpp
 LOCAL_MODULE := libcamhelpr
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SHARED_LIBRARY)
