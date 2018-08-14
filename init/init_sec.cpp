@@ -65,13 +65,13 @@ void vendor_load_properties()
     description = name + "-user 8.0.0 R16NW " + bl_model + bl_build + " release-keys";
     fingerprint = "samsung/" + name + "/" + device + ":8.0.0/R16NW/" + bl_model + bl_build + ":user/release-keys";
 
-    LOG(INFO) << "Found bootloader: %s", bootloader.c_str();
-    LOG(INFO) << "Setting ro.product.model and ro.vendor.product.model: %s", model.c_str();
-    LOG(INFO) << "Setting ro.product.device and ro.vendor.product.device: %s", device.c_str();
-    LOG(INFO) << "Setting ro.product.name and ro.vendor.product.name: %s", name.c_str();
-    LOG(INFO) << "Setting ro.build.product and ro.vendor.build.product: %s", device.c_str();
-    LOG(INFO) << "Setting ro.build.description and ro.vendor.build.description: %s", description.c_str();
-    LOG(INFO) << "Setting ro.build.fingerprint and ro.vendor.build.fingerprint: %s", fingerprint.c_str();
+    LOG(INFO) << "Found bootloader: " << bootloader;
+    LOG(INFO) << "Setting ro.product.model and ro.vendor.product.model: " << model;
+    LOG(INFO) << "Setting ro.product.device and ro.vendor.product.device: " << device;
+    LOG(INFO) << "Setting ro.product.name and ro.vendor.product.name: " << name;
+    LOG(INFO) << "Setting ro.build.product and ro.vendor.build.product: " << device;
+    LOG(INFO) << "Setting ro.build.description and ro.vendor.build.description: " << description;
+    LOG(INFO) << "Setting ro.build.fingerprint and ro.vendor.build.fingerprint: " << fingerprint;
 
     property_override_dual("ro.product.model", "ro.vendor.product.model", model.c_str());
     property_override_dual("ro.product.device", "ro.vendor.product.device", device.c_str());
