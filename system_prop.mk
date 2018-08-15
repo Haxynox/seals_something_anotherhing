@@ -57,3 +57,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.usb.ffs.aio_compat=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.first_api_level=27

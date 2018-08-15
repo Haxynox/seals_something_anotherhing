@@ -15,10 +15,11 @@ PRODUCT_PACKAGES += \
 	libxml2 \
 	libprotobuf-cpp-full \
 	libsecril-client \
-	android.hardware.radio@1.0 \
-	android.hardware.radio.deprecated@1.0 \
 	modemloader \
 	libsecril-client-sap
+
+#	android.hardware.radio@1.0 \
+#	android.hardware.radio.deprecated@1.0 \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
