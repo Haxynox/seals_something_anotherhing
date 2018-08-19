@@ -45,8 +45,10 @@ void vendor_load_properties()
     std::string description;
     std::string fingerprint;
     std::string seal; // seal
+    std::string sealion; // sealion
 
     seal = "true";
+    sealion = "false";
 
     model = "SM-" + bl_model;
 
@@ -76,12 +78,14 @@ void vendor_load_properties()
     LOG(DEBUG) << "Setting ro.build.description and ro.vendor.build.description: " << description;
     LOG(DEBUG) << "Setting ro.build.fingerprint and ro.vendor.build.fingerprint: " << fingerprint;
     LOG(DEBUG) << "Setting ro.seal and ro.vendor.seal: " << seal;
+    LOG(DEBUG) << "Setting ro.sealion and ro.vendor.sealion: " << sealion;
 
     property_override_dual("ro.product.model", "ro.vendor.product.model", model.c_str());
     property_override_dual("ro.product.device", "ro.vendor.product.device", device.c_str());
     property_override_dual("ro.product.name", "ro.vendor.product.name", name.c_str());
     property_override_dual("ro.build.product", "ro.vendor.build.product", device.c_str());
     property_override_dual("ro.seal", "ro.vendor.seal", seal.c_str());
+    property_override_dual("ro.sealion", "ro.vendor.sealion", sealion.c_str());
     #if 0
     property_override_dual("ro.build.description", "ro.vendor.build.description", description.c_str());
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", fingerprint.c_str());
