@@ -53,3 +53,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0
 
+# test prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.seal=false \
+    ro.vendor.seal=false

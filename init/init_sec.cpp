@@ -44,6 +44,9 @@ void vendor_load_properties()
     std::string name;    // hero2ltebmc
     std::string description;
     std::string fingerprint;
+    std::string seal; // seal
+
+    seal = "true";
 
     model = "SM-" + bl_model;
 
@@ -70,13 +73,17 @@ void vendor_load_properties()
     LOG(INFO) << "Setting ro.product.device and ro.vendor.product.device: " << device;
     LOG(INFO) << "Setting ro.product.name and ro.vendor.product.name: " << name;
     LOG(INFO) << "Setting ro.build.product and ro.vendor.build.product: " << device;
-    LOG(INFO) << "Setting ro.build.description and ro.vendor.build.description: " << description;
-    LOG(INFO) << "Setting ro.build.fingerprint and ro.vendor.build.fingerprint: " << fingerprint;
+    LOG(DEBUG) << "Setting ro.build.description and ro.vendor.build.description: " << description;
+    LOG(DEBUG) << "Setting ro.build.fingerprint and ro.vendor.build.fingerprint: " << fingerprint;
+    LOG(DEBUG) << "Setting ro.seal and ro.vendor.seal: " << seal;
 
     property_override_dual("ro.product.model", "ro.vendor.product.model", model.c_str());
     property_override_dual("ro.product.device", "ro.vendor.product.device", device.c_str());
     property_override_dual("ro.product.name", "ro.vendor.product.name", name.c_str());
     property_override_dual("ro.build.product", "ro.vendor.build.product", device.c_str());
+    property_override_dual("ro.seal", "ro.vendor.seal", seal.c_str());
+    #if 0
     property_override_dual("ro.build.description", "ro.vendor.build.description", description.c_str());
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", fingerprint.c_str());
+    #endif
 }
