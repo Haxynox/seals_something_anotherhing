@@ -31,7 +31,7 @@
 #include <utils/threads.h>
 #include <camera/CameraMetadata.h>
 
-#include <camera/SECCameraProperties.h>
+#include "SECCameraProperties.h"
 
 static android::Mutex gCameraWrapperLock;
 static camera_module_t *gVendorModule = 0;
