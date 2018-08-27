@@ -28,8 +28,7 @@ import org.lineageos.internal.util.FileUtils;
  */
 public class SunlightEnhancement {
 
-    private static final String LUX_PATH = "/sys/class/mdnie/mdnie/lux";
-
+    private static final String HBM_PATH = "/sys/class/mdnie/mdnie/lux";
     /* see drivers/video/fbdev/exynos/decon_8890/panels/mdnie_lite_table*, get_hbm_index */
     private static final String LUX_VALUE = "10000";
 
@@ -39,7 +38,7 @@ public class SunlightEnhancement {
      * @return boolean Supported devices must return always true
      */
     public static boolean isSupported() {
-        return FileUtils.isFileWritable(LUX_PATH);
+        return FileUtils.isFileWritable(HBM_PATH);
     }
 
     /**
@@ -49,7 +48,7 @@ public class SunlightEnhancement {
      * the operation failed while reading the status; true in any other case.
      */
     public static boolean isEnabled() {
-        return !("0".equals(FileUtils.readOneLine(LUX_PATH)));
+        return Integer.parseInt(FileUtils.readOneLine(HBM_PATH)) > 0;
     }
 
     /**
@@ -60,7 +59,8 @@ public class SunlightEnhancement {
      * failed; true in any other case.
      */
     public static boolean setEnabled(boolean status) {
-        return FileUtils.writeLine(LUX_PATH, status ? LUX_VALUE : "0");
+        String value = status ? HBM_MIN_VALUE : "0";
+        return FileUtils.writeLine(HBM_PATH, value);
     }
 
     /**
@@ -79,6 +79,7 @@ public class SunlightEnhancement {
      *
      * @return true if this enhancement is self-managed
      */
-    public static boolean isSelfManaged() { return false; }
-
+    public static boolean isSelfManaged() {
+        return false;
+    }
 }
