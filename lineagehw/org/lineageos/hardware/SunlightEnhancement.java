@@ -30,7 +30,7 @@ public class SunlightEnhancement {
 
     private static final String HBM_PATH = "/sys/class/mdnie/mdnie/lux";
     /* see drivers/video/fbdev/exynos/decon_8890/panels/mdnie_lite_table*, get_hbm_index */
-    private static final String LUX_VALUE = "10000";
+    private static final String HBM_MIN_VALUE = "10000";
 
     /**
      * Whether device supports SRE
