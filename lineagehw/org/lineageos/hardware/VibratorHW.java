@@ -39,20 +39,15 @@ public class VibratorHW {
     }
 
     public static int getCurIntensity()  {
-        if (FileUtils.isFileReadable(LEVEL_PATH)) {
-            return Integer.parseInt(FileUtils.readOneLine(LEVEL_PATH));
-        }
-        return 0;
+        String actualIntensity = FileUtils.readOneLine(LEVEL_PATH).replace("intensity: ", "");
+        return Integer.parseInt(actualIntensity);
     }
 
     public static int getDefaultIntensity()  {
-        return 6500;
+        return 5500;
     }
 
     public static boolean setIntensity(int intensity)  {
-        if (FileUtils.isFileWritable(LEVEL_PATH)) {
-            return FileUtils.writeLine(LEVEL_PATH, String.valueOf(intensity));
-        }
-        return false;
+        return FileUtils.writeLine(LEVEL_PATH, String.valueOf(intensity));
     }
 }
