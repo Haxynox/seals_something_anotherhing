@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The Haxynox Project
+# Copyright (C) 2017-2018 The Haxynox Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,4 +29,23 @@ LOCAL_C_INCLUDES := frameworks/native/include
 LOCAL_SRC_FILES := camparams.cpp
 LOCAL_MODULE := libcamhelpr
 LOCAL_MODULE_TAGS := optional
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := FingerprintWrapper.cpp
+LOCAL_SHARED_LIBRARIES := libhardware liblog libcutils
+LOCAL_MODULE := fingerprint.$(TARGET_BOARD_PLATFORM)
+LOCAL_MODULE_RELATIVE_PATH := hw
+LOCAL_MODULE_TAGS := optional
+LOCAL_PROPRIETARY_MODULE := true
+LOCAL_C_INCLUDES := $(LOCAL_PATH)
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_SRC_FILES := libbauthtzcommon.c
+LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_MODULE := libbauthtzcommon_shim
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
