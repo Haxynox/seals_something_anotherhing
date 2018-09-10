@@ -52,11 +52,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.adb.secure=0
-
-# USB
-PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0 \
     sys.usb.ffs.aio_compat=1
 
+# FP hal was asking for this
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=27
+
