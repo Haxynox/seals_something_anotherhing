@@ -286,17 +286,6 @@ static void sec_power_hint(struct power_module *module, power_hint_t hint, void 
 	pthread_mutex_unlock(&sec->lock);
 }
 
-static int get_feature(struct power_module *module __unused, feature_t feature)
-{
-	switch (feature) {
-		case POWER_FEATURE_SUPPORTED_PROFILES:
-		return 3;
-
-		default:
-		return -EINVAL;
-	}
-}
-
 static void set_feature(struct power_module *module, feature_t feature, int state)
 {
 	struct sec_power_module *sec = container_of(module, struct sec_power_module, base);
@@ -359,7 +348,6 @@ struct sec_power_module HAL_MODULE_INFO_SYM = {
 		.init = sec_power_init,
 		.setInteractive = power_set_interactive,
 		.powerHint = sec_power_hint,
-		.getFeature = get_feature,
 		.setFeature = set_feature,
 	},
 

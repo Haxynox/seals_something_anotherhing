@@ -1,3 +1,5 @@
+#include <hardware/power.h>
+
 /* paths of input devices */
 #define TOUCHSCREEN_POWER_PATH "/sys/class/input/input1/enabled"
 #define TOUCHKEY_POWER_PATH "/sys/class/input/input0/enabled"
@@ -45,3 +47,5 @@
 #define INTERACTIVE_HIGH_B_GO_HISPEED_LOAD "75"
 #define INTERACTIVE_HIGH_B_HISPEED_FREQ "1456000"
 #define INTERACTIVE_HIGH_B_TARGET_LOADS "70 1456000:80"
+
+const static power_hint_t POWER_HINT_SET_PROFILE = (power_hint_t)0x00000111;
