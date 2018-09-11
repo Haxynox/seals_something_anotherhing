@@ -54,3 +54,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     sys.usb.ffs.aio_compat=1
+
+
+# Disable HWC
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.hwc.force_gpu=1 \
+    debug.egl.hw=0 \
+    debug.sf.hw=0 \
+    persist.sys.ui.hw=false
