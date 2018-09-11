@@ -43,7 +43,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SdcardFS
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sys.sdcardfs=false \
+    ro.sys.sdcardfs=true \
     ro.sys.sdcardfs.legacy-mounting=1
 
 # WiFi Display
@@ -54,8 +54,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     sys.usb.ffs.aio_compat=1
-
-# FP hal was asking for this
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.first_api_level=27
-
