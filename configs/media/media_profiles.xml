@@ -169,19 +169,6 @@
              channels="2" />
     </EncoderProfile>
 
-    <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="50000000"
-             width="3840"
-             height="2160"
-             frameRate="30" />
-
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
     <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="384000"
@@ -284,63 +271,12 @@
              channels="2" />
     </EncoderProfile>
 
-    <EncoderProfile quality="timelapse2160p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="50000000"
-             width="3840"
-             height="2160"
-             frameRate="30" />
-
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
-    <EncoderProfile quality="timelapse2160p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="50000000"
-             width="3840"
-             height="2160"
-             frameRate="30" />
-
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
     <EncoderProfile quality="highspeedlow" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="384000"
              width="176"
              height="144"
              frameRate="120" />
-
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
-    <EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="50000000"
-             width="3840"
-             height="2160"
-             frameRate="30" />
 
       <!--
             The Audio part of the profile will not be used since time lapse mode
@@ -391,23 +327,6 @@
              bitRate="17000000"
              width="1920"
              height="1080"
-             frameRate="30" />
-
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
-    <EncoderProfile quality="highspeed2160p" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="50000000"
-             width="3840"
-             height="2160"
              frameRate="30" />
 
       <!--
@@ -627,23 +546,6 @@
              channels="2" />
     </EncoderProfile>
 
-    <EncoderProfile quality="highspeedhigh" fileFormat="mp4" duration="30">
-      <Video codec="h264"
-             bitRate="17000000"
-             width="2560"
-             height="1440"
-             frameRate="30" />
-
-      <!--
-            The Audio part of the profile will not be used since time lapse mode
-            does not capture audio
-      -->
-      <Audio codec="aac"
-             bitRate="256000"
-             sampleRate="48000"
-             channels="2" />
-    </EncoderProfile>
-
     <EncoderProfile quality="highspeed480p" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="3449000"
@@ -717,8 +619,8 @@
     -->
     <VideoEncoderCap name="h264" enabled="true"
         minBitRate="64000" maxBitRate="50000000"
-        minFrameWidth="176" maxFrameWidth="3840"
-        minFrameHeight="144" maxFrameHeight="2160"
+        minFrameWidth="176" maxFrameWidth="1920"
+        minFrameHeight="144" maxFrameHeight="1080"
         minFrameRate="1" maxFrameRate="30" />
 
     <VideoEncoderCap name="h263" enabled="true"
