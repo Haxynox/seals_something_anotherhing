@@ -46,6 +46,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.sdcardfs=true \
     ro.sys.sdcardfs.legacy-mounting=1
 
+# Wifi
+PRODUCT_PROPERTY_OVERRIDES += \
+    wifi.direct.interface=p2p-dev-wlan0
+
 # WiFi Display
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1
@@ -62,7 +66,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     debug.sf.hw=0 \
     persist.sys.ui.hw=false
-
-# p2p drain haxx
-PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.direct.non-concurrent=true
