@@ -40,7 +40,7 @@ static inline const char* getBTName()
 #define BTM_DEF_LOCAL_NAME getBTName()
 
 #define BLE_VND_INCLUDED         TRUE
-#define BTIF_HF_WBS_PREFERRED    TRUE    /* Use WBS */
+#define BTIF_HF_WBS_PREFERRED    FALSE   /* Don't use WBS */
 #define BTM_WBS_INCLUDED         TRUE    /* Enable WBS */
 
 #endif
