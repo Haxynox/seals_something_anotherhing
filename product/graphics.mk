@@ -6,7 +6,8 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.allocator@2.0-service \
 	android.hardware.graphics.composer@2.1-impl \
 	android.hardware.graphics.mapper@2.0-impl \
-	libhwc2on1adapter
+	libhwc2on1adapter \
+	gralloc.universal8890
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
