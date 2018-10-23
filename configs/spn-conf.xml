@@ -21,6 +21,7 @@
 spnOverride attributes:
 	numeric: MCC+MNC from IMSI - this attribute is used as the key
 	imsi_subset: this attribute is used as a imsi filter (imsi format is: [MCC][MNC][imsi_subset][rest of imsi]) - the longest matching imsi_subset is a best match
+	gid_1: gid1 value from simcard gid1 field.
 	spn: spn to show instead of EFSPN. locales can be specified here too, if needed
 	spn_display_rule: SPN_RULE_SHOW_SPN, SPN_RULE_SHOW_PLMN or both
 	fake_home_on: regard specified PLMN as home
@@ -93,11 +94,18 @@ examples:
 <!-- Czech -->
     <spnOverride numeric="23001" vowifi_opname="T-Mobile CZ WiFi"/>
 
+<!-- iD MVNO opeator for 3UK-->
+    <spnOverride numeric="23420" gid_1="0305" vowifi_opname="iD"/>
+
 <!-- H3G RM#2022-->
     <spnOverride numeric="23420" spn_display_rule="SPN_RULE_SHOW_PLMN" spn_override_only_on="23420,23433" fake_home_on="23420,23433,23434" vowifi_opname="3"/>
 
 <!-- Lycamobile -->
     <spnOverride numeric="23426" fake_home_on="23410"/>
+
+<!-- BT ( MVNO of EE ) -->
+    <spnOverride numeric="23430" gid_1="b3" vowifi_opname="BT"/>
+    <spnOverride numeric="23430" gid_1="c3" vowifi_opname="BT"/>
 
 <!-- Everything Everywhere -->
     <spnOverride numeric="23430" spn_display_rule="SPN_RULE_SHOW_PLMN" spn_override_only_on="23430,23431,23432,23433,23434,23486,00101" fake_home_on="23430,23431,23432,23433,23434,23486"/>
@@ -325,6 +333,6 @@ examples:
     <spnOverride numeric="73401" fake_home_on="73401,73402,73403"/>
     <spnOverride numeric="73402" fake_home_on="73401,73402,73403"/>
     <spnOverride numeric="73403" fake_home_on="73401,73402,73403"/>
-    <spnOverride numeric="74002" fake_home_on="74000"/>
+    <spnOverride numeric="74002" fake_home_on="74000,74001"/>
 
 </spnOverrides>
