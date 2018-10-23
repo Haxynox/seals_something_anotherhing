@@ -245,4 +245,11 @@
     <!-- If true, the doze component is not started until after the screen has been
          turned off and the screen off animation has been performed. -->
     <bool name="config_dozeAfterScreenOff">true</bool>
+
+    <!-- Values for GPS configuration -->
+    <string-array translatable="false" name="config_gpsParameters">
+        <item>XTRA_SERVER_1=http://gllto1.glpals.com/4day/v5/latest/lto2.dat</item>
+        <item>XTRA_SERVER_2=http://gllto2.glpals.com/4day/v5/latest/lto2.dat</item>
+    </string-array>
+
 </resources>
