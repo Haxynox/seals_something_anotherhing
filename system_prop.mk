@@ -53,3 +53,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.seal=false \
     ro.vendor.seal=false
+
+# Vendor security patch level
+# G935FXXS3ERJ2 2018-10-01
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2018-10-01
+
