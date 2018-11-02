@@ -3,7 +3,10 @@ DEVICE_PATH := device/samsung/hero-common
 # Configs
 PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/configs/audio/audio_policy.conf:system/etc/audio_policy.conf \
-	$(DEVICE_PATH)/configs/audio/mixer_paths_0.xml:system/etc/mixer_paths_0.xml
+        $(DEVICE_PATH)/configs/audio/mixer_paths.xml:system/vendor/etc/mixer_paths_0.xml \
+        $(DEVICE_PATH)/configs/audio/mixer_paths.xml:system/etc/mixer_paths_0.xml
+
+#	$(DEVICE_PATH)/configs/audio/mixer_paths_0.xml:system/etc/mixer_paths_0.xml
 
 # Packages
 PRODUCT_PACKAGES += \
@@ -11,6 +14,7 @@ PRODUCT_PACKAGES += \
 	audio.usb.default \
 	audio.r_submix.default \
 	audio.primary.universal8890 \
+	libexynosvisualizer \
 	android.hardware.audio@2.0-impl \
 	android.hardware.audio.effect@2.0-impl
 
