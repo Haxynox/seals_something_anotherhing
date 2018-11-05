@@ -41,6 +41,9 @@ TARGET_USES_64_BIT_BINDER := true
 # Use SDFat for exfat driver
 TARGET_EXFAT_DRIVER := sdfat
 
+# Security
+VENDOR_SECURITY_PATCH := 2018-10-01
+
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
 
