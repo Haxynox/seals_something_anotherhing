@@ -1,4 +1,5 @@
 subdirs = [
+    "bluetooth_impl",
     "camera",
     "impl",
     "usb",
