@@ -54,11 +54,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.seal=false \
     ro.vendor.seal=false
 
-# NFC workaround
-# tinyurl.com/ybfvovkn
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.nfc.sec_hal=seal
-
 # Vendor security patch level
 # XXU3ERJ3 2018-10-01
 PRODUCT_PROPERTY_OVERRIDES += \
