@@ -55,7 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.seal=false
 
 # Vendor security patch level
-# XXU3ERJ3 2018-10-01
+# XXU3ERJE 2018-11-01
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2018-10-01
+    ro.lineage.build.vendor_security_patch=2018-11-01
 
