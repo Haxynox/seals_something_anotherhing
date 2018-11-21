@@ -29146,6 +29146,7 @@
       mmsproxy="203.162.21.114"
       mmsport="3130"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="VN MobiFone Email"
@@ -29155,6 +29156,7 @@
       user="mms"
       password="mms"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="VN VINAPHONE MMS"
@@ -29167,6 +29169,7 @@
       mmsproxy="10.1.10.46"
       mmsport="8000"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="VN VINAPHONE Email"
@@ -29176,6 +29179,7 @@
       user="mms"
       password="mms"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="VIETTEL Email"
@@ -29183,6 +29187,7 @@
       mnc="04"
       apn="v-internet"
       type="default,supl"
+      protocol="IPV4V6"
   />
 
   <apn carrier="VIETTEL MMS"
@@ -29193,6 +29198,7 @@
       mmsproxy="192.168.233.10"
       mmsport="8080"
       type="mms"
+      protocol="IPV4V6"
   />
 
   <apn carrier="VN Vietnamobile Email"
