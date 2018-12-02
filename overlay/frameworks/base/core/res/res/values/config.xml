@@ -252,4 +252,6 @@
         <item>XTRA_SERVER_2=http://gllto2.glpals.com/4day/v5/latest/lto2.dat</item>
     </string-array>
 
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
 </resources>
