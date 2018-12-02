@@ -302,6 +302,11 @@ static void set_feature(struct power_module *module, feature_t feature, int stat
 	struct sec_power_module *sec = container_of(module, struct sec_power_module, base);
 
 	switch (feature) {
+#ifdef TAP_TO_WAKE_NODE
+	case POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
+		sysfs_write(TAP_TO_WAKE_NODE, state ? "1" : "0");
+		break;
+#endif
 	default:
 		ALOGW("Error setting the feature %d and state %d, it doesn't exist\n",
 			  feature, state);
