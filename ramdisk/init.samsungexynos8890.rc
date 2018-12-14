@@ -452,6 +452,9 @@ on fs
     chmod 0660 /dev/p3
     chown system system /dev/p3
 
+# Restore the previous batt_capacity_max (if it exists)
+    copy /efs/Battery/prev_batt_capacity_max /sys/class/power_supply/battery/batt_capacity_max
+
 # NFC : create data/nfc for nv storage
     mkdir /efs/sec_efs/nfc 0500 nfc nfc
 
@@ -746,3 +749,8 @@ service cameraserver /system/bin/cameraserver
     group media_rw audio camera drmrpc inet shell sdcard_r system
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks
+
+on shutdown
+    # Fix permissions then store the current batt_capacity_max value in the EFS partition
+    chmod 600 /sys/class/power_supply/battery/batt_capacity_max
+    copy /sys/class/power_supply/battery/batt_capacity_max /efs/Battery/prev_batt_capacity_max
