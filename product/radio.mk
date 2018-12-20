@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
 	android.hardware.radio@1.0 \
 	android.hardware.radio.deprecated@1.0 \
 	modemloader \
-	libsecril-client-sap
+	libsecril-client-sap \
+	Stk
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
