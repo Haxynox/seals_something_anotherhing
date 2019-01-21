@@ -55,7 +55,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.seal=false
 
 # Vendor security patch level
-# FXXU3ERL3 2018-12-01
+# FXXU3ERL3 2018-12-01 (No vendor changes for january-2019, blobs we use are unchanged)
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.lineage.build.vendor_security_patch=2018-12-01
+    ro.lineage.build.vendor_security_patch=2019-01-01
 
