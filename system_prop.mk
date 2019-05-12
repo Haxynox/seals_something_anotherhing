@@ -59,6 +59,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     sys.usb.ffs.aio_compat=1
 
-# TEMP: disable hwc
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.hwc.force_gpu=1
