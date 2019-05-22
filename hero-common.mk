@@ -78,7 +78,8 @@ PRODUCT_PACKAGES += \
         HeroDoze \
 	thermal.universal8890 \
 	android.hidl.base@1.0 \
-	android.hidl.manager@1.0
+	android.hidl.manager@1.0 \
+	RemovePackages
 
 # Filesystem tools for resizing system partition filesystem
 PRODUCT_PACKAGES += \
