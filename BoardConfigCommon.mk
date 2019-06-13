@@ -66,7 +66,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/hero-common/releasetools
 TARGET_SYSTEM_PROP := device/samsung/hero-common/system.prop
 
 # Renderscript
-BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53.a57
+BOARD_OVERRIDE_RS_CPU_VARIANT_32 := cortex-a53
 BOARD_OVERRIDE_RS_CPU_VARIANT_64 := exynos-m1
 
 # SELinux
