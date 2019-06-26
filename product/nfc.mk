@@ -18,5 +18,5 @@ PRODUCT_PACKAGES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.nfc.sec_hal=true \
+        ro.nfc.fw_dl_on_boot=false \
 	ro.nfc.port="I2C"
