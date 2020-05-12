@@ -108,6 +108,9 @@ PRODUCT_PACKAGES += \
 # System properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# Enable stats logging in LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # call Samsung S.LSI board support package
 $(call inherit-product, hardware/samsung_slsi/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi/exynos8890/exynos8890.mk)
